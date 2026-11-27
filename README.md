@@ -7,7 +7,7 @@ machine health and a group chat sit around the office.
 It runs as a static **demo** with sample data and no server, in the Ntech Developers brand and colours. It is the
 showcase behind the "Office Solutions" zone of [ntechdevelopers.com](https://ntechdevelopers.com).
 
-**Live demo:** https://ntechdevelopers.github.io/Ntech.Illustration.OPC.Agent/
+**Live demo:** [https://ntechdevelopers.com/showcase-office-3d/](https://ntechdevelopers.com/showcase-office-3d)
 
 ![The 3D office: sessions in the left column, the office in the middle, the live activity feed on the right](docs/screenshots/office-overview.jpg)
 
