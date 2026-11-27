@@ -1,0 +1,38 @@
+/* The office stylesheets in cascade order (later files override earlier ones). Kept as @import in one file so
+   the import sorting of the code formatter can never reorder the cascade. */
+@import './vendor/styles/fonts.css';
+@import './vendor/styles/base.css';
+@import './vendor/styles/topbar.css';
+@import './vendor/styles/topbar-plan.css';
+@import './vendor/styles/sidebars.css';
+@import './vendor/styles/activity.css';
+@import './vendor/styles/sessions.css';
+@import './vendor/styles/streamer.css';
+@import './vendor/styles/permissions.css';
+@import './vendor/styles/stage.css';
+@import './vendor/styles/labels.css';
+@import './vendor/styles/lite.css';
+@import './vendor/styles/timeline.css';
+@import './vendor/styles/places.css';
+@import './vendor/styles/csgt.css';
+@import './vendor/styles/todos.css';
+@import './vendor/styles/drawers.css';
+@import './vendor/styles/chat.css';
+@import './vendor/styles/group-chat.css';
+@import './vendor/styles/mac.css';
+@import './vendor/styles/burn.css';
+@import './vendor/styles/vault.css';
+@import './vendor/styles/modal.css';
+@import './vendor/styles/replay.css';
+@import './vendor/styles/photo.css';
+@import './vendor/styles/tips.css';
+@import './vendor/styles/settings.css';
+@import './vendor/styles/responsive.css';
+@import './vendor/styles/phone.css';
+@import './ntech-theme.css';
+@import './ntech/ntech.css';
+
+/* The React root sits between body and the office's #app, which fills the page height. */
+#root {
+    height: 100%;
+}

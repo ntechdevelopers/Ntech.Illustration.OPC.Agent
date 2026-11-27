@@ -1,0 +1,148 @@
+/* Ntech Developers ecosystem in the office: the 🔗 pins on the furniture and the card of links they open. */
+
+.ntech-pin-holder {
+    pointer-events: none;
+}
+
+.ntech-pin {
+    all: unset;
+    pointer-events: auto;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 9px 4px 6px;
+    border-radius: 999px;
+    font: 700 10px/1 var(--font);
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    color: var(--on-accent);
+    background: var(--accent);
+    box-shadow: 0 0 0 3px rgba(63, 184, 255, 0.22), 0 6px 16px rgba(0, 0, 0, 0.35);
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.ntech-pin i {
+    font-style: normal;
+    font-size: 11px;
+}
+
+.ntech-pin:hover,
+.ntech-pin:focus-visible {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 4px rgba(63, 184, 255, 0.35), 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.ntech-pin:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .ntech-pin i {
+        animation: ntech-pin-pulse 2.4s ease-in-out infinite;
+    }
+}
+
+@keyframes ntech-pin-pulse {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.55;
+    }
+}
+
+.is-fp .ntech-pin-holder {
+    display: none;
+}
+
+/* The card: the office's own place-card look, kept at the bottom left of the stage. */
+.plc {
+    background: rgba(8, 22, 52, 0.97);
+}
+
+.plc.ntc {
+    left: 16px;
+    top: auto;
+    bottom: 84px;
+    z-index: 4;
+    width: 340px;
+    max-width: calc(100% - 32px);
+    transform: none;
+}
+
+.ntc-ico {
+    font-size: 16px;
+}
+
+.ntc-close {
+    all: unset;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 8px;
+    font-size: 20px;
+    line-height: 1;
+    color: var(--muted);
+}
+
+.ntc-close:hover,
+.ntc-close:focus-visible {
+    color: var(--ink);
+    background: var(--card-2);
+}
+
+.ntc-body {
+    display: grid;
+    gap: 6px;
+}
+
+.ntc-link {
+    display: grid;
+    gap: 2px;
+    padding: 9px 11px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--ink);
+    background: var(--card);
+    border: 1px solid var(--line);
+    transition: border-color 0.15s, background 0.15s;
+}
+
+.ntc-link b {
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.ntc-link small {
+    font-size: 0.68rem;
+    color: var(--accent);
+}
+
+.ntc-link:hover,
+.ntc-link:focus-visible {
+    background: var(--card-2);
+    border-color: var(--accent-line);
+}
+
+.ntc-foot {
+    font-style: italic;
+}
+
+/* Ecosystem messages in the group chat: links in the brand colour. */
+.zc-md a {
+    color: var(--accent);
+}
+
+@media (max-width: 720px) {
+    .plc.ntc {
+        bottom: 72px;
+        left: 8px;
+        width: calc(100% - 16px);
+    }
+}
