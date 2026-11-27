@@ -1,0 +1,77 @@
+/* Ntech Developers look for the vendored office UI, loaded after the office stylesheets: the deep navy panels and the
+   sky-blue brand of the ntechdevelopers.com home page replace the default grey shell and coral accent. Status colours (green, amber, red)
+   keep their meaning and are left alone; the 3D scene keeps its own palette. */
+:root {
+    --bg: #061029;
+    --bar: #081634;
+    --side: #0a1a3c;
+    --card: #0f2249;
+    --card-2: #142b57;
+    --card-3: #1b3666;
+    --line: rgba(70, 190, 255, 0.1);
+    --line-2: rgba(70, 190, 255, 0.22);
+    --ink: #e6f3ff;
+    --muted: #7fa3c9;
+    --faint: #53719a;
+    --accent: #3fb8ff;
+    --accent-hi: #6fcbff;
+    --accent-soft: rgba(63, 184, 255, 0.13);
+    --accent-line: rgba(63, 184, 255, 0.6);
+    --on-accent: #04102a;
+}
+
+/* Brand: the round white Ntech mark and the wide italic name of the home v4 navigation bar. */
+.tb-brand {
+    font-family: 'Orbitron', var(--font);
+    font-style: italic;
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+}
+
+.tb-brand .tb-clock,
+.tb-brand .demo-chip {
+    font-style: normal;
+    letter-spacing: normal;
+}
+
+.logo.logo--ntech {
+    width: 30px;
+    height: 30px;
+    flex: none;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+}
+
+.logo.logo--ntech img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.logo.logo--ntech:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+/* Rules that spell the coral out instead of using the accent tokens. */
+.kpi--cost {
+    background: linear-gradient(160deg, rgba(63, 184, 255, 0.1), rgba(63, 184, 255, 0.02) 70%), var(--card);
+    border-color: rgba(63, 184, 255, 0.22);
+}
+
+.verdict-acts .btn--primary:hover {
+    background: rgba(63, 184, 255, 0.22);
+}
+
+.pa-browser {
+    border-color: rgba(63, 184, 255, 0.25);
+}
+
+.pb-tgl[aria-pressed='true'],
+.pb-seg button[aria-pressed='true'] {
+    background: rgba(63, 184, 255, 0.2);
+    border-color: rgba(63, 184, 255, 0.7);
+}
